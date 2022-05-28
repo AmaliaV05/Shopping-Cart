@@ -148,7 +148,7 @@ namespace Shopping_Cart.Service
                 {
                     discount = new()
                     {
-                        Amount = TruncateDecimals.Truncate(lamp.Price * monitorQuantity * 0.5m, 2),
+                        Amount = TruncateDecimals.Truncate(lamp.Price * (monitorQuantity / 2) * 0.5m, 2),
                         DiscountType = Discounts.Offer2,
                         Invoice = invoice
                     };
